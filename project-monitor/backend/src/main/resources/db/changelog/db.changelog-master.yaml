@@ -1,0 +1,19 @@
+databaseChangeLog:
+  - include:
+      file: db/changelog/changes/001-initial-schema.sql
+  - include:
+      file: db/changelog/changes/002-add-password-column.sql
+  - include:
+      file: db/changelog/changes/003-create-maturity-kpi.sql
+  - include:
+      file: db/changelog/changes/004-create-ai-success-case.sql
+  - include:
+      file: db/changelog/changes/005-create-risk.sql
+  - include:
+      file: db/changelog/changes/006-add-additional-kpis.sql
+  - include:
+      file: db/changelog/changes/007-create-decision-rule.sql
+  - include:
+      file: db/changelog/changes/008-create-kpi-template.sql
+  - include:
+      file: db/changelog/changes/009-add-kpi-justifications.sql

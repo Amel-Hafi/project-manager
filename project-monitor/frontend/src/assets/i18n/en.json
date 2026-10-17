@@ -1,0 +1,518 @@
+{
+    "common": {
+        "cancel": "Cancel",
+        "save": "Save",
+        "confirm": "Confirm",
+        "add": "Add",
+        "delete": "Delete",
+        "close": "Close",
+        "back": "Back",
+        "actions": "Actions",
+        "name": "Name",
+        "description": "Description",
+        "status": "Status",
+        "loading": "Loading",
+        "yes": "Yes",
+        "no": "No",
+        "all": "All",
+        "error": {
+            "deletion": "Error during deletion",
+            "loading": "Error during loading",
+            "update": "Error during update",
+            "create": "Error during creation"
+        }
+    },
+    "nav": {
+        "dashboard": "Dashboard",
+        "referential": "Referential",
+        "clients": "Clients",
+        "projects": "Projects",
+        "applications": "Applications",
+        "users": "Users",
+        "decision_rules": "Decision Rules",
+        "kpi_templates": "KPI Templates"
+    },
+    "referential": {
+        "categories": {
+            "title": "Categories"
+        },
+        "actions": {
+            "add": "Add"
+        },
+        "table": {
+            "columnName": "Name",
+            "columnVersion": "Version",
+            "columnStatus": "Status",
+            "columnActions": "Actions"
+        },
+        "placeholder": "Select a category to view technologies",
+        "errors": {
+            "loadCategories": "Error loading categories",
+            "loadItems": "Error loading technologies",
+            "delete": "Error during deletion"
+        },
+        "confirm": {
+            "deleteTitle": "Delete",
+            "deleteMessage": "Delete technology \"{{name}}\"?"
+        },
+        "notifications": {
+            "deleted": "Technology deleted",
+            "updated": "Technology updated",
+            "created": "Technology created",
+            "updateError": "Error during update",
+            "createError": "Error during creation"
+        },
+        "dialog": {
+            "titleEdit": "Edit a technology",
+            "titleAdd": "Add a technology",
+            "name": "Name",
+            "version": "Version",
+            "description": "Description",
+            "status": "Status",
+            "statusActive": "Active",
+            "statusObsolete": "Obsolete"
+        },
+        "deactivate": "",
+        "reactivate": "",
+        "status_deprecated": "",
+        "confirm_deactivate": "",
+        "confirm_reactivate": "",
+        "deactivated_success": "",
+        "reactivated_success": ""
+    },
+    "clients": {
+        "title": "Clients",
+        "actions": {
+            "add": "Add"
+        },
+        "table": {
+            "columnName": "Name",
+            "columnDescription": "Description",
+            "columnActions": "Actions"
+        },
+        "confirm": {
+            "deleteTitle": "Delete",
+            "deleteMessage": "Delete client \"{{name}}\"?"
+        },
+        "notifications": {
+            "deleted": "Client deleted",
+            "updated": "Client updated",
+            "created": "Client created",
+            "updateError": "Error during update",
+            "createError": "Error during creation"
+        },
+        "errors": {
+            "loading": "Error loading clients",
+            "delete": "Error during deletion"
+        },
+        "dialog": {
+            "titleEdit": "Edit a client",
+            "titleAdd": "Add a client",
+            "name": "Name",
+            "description": "Description"
+        },
+        "detail": {
+            "backToClients": "Back to clients",
+            "projectsTitle": "Client projects",
+            "addProject": "Add a project",
+            "errors": {
+                "loadProjects": "Error loading projects"
+            }
+        }
+    },
+    "projects": {
+        "title": "Projects",
+        "actions": {
+            "add": "Add"
+        },
+        "table": {
+            "columnName": "Name",
+            "columnClient": "Client",
+            "columnDescription": "Description",
+            "columnActions": "Actions"
+        },
+        "confirm": {
+            "deleteTitle": "Delete",
+            "deleteMessage": "Delete project \"{{name}}\"?"
+        },
+        "notifications": {
+            "deleted": "Project deleted",
+            "updated": "Project updated",
+            "created": "Project created",
+            "updateError": "Error during update",
+            "createError": "Error during creation"
+        },
+        "errors": {
+            "loading": "Error during loading",
+            "loadClients": "Error loading clients",
+            "delete": "Error during deletion"
+        },
+        "dialog": {
+            "titleEdit": "Edit a project",
+            "titleAdd": "Add a project",
+            "name": "Name",
+            "description": "Description",
+            "client": "Client"
+        },
+        "detail": {
+            "backToProjects": "Back to projects",
+            "applicationsTitle": "Project applications",
+            "addApplication": "Add an application",
+            "errors": {
+                "loadApplications": "Error loading applications"
+            }
+        }
+    },
+    "applications": {
+        "title": "Applications",
+        "actions": {
+            "add": "Add"
+        },
+        "table": {
+            "columnName": "Name",
+            "columnProject": "Project",
+            "columnStatus": "Status",
+            "columnActions": "Actions"
+        },
+        "confirm": {
+            "deleteTitle": "Delete",
+            "deleteMessage": "Delete application \"{{name}}\"?"
+        },
+        "notifications": {
+            "deleted": "Application deleted",
+            "updated": "Application updated",
+            "created": "Application created",
+            "updateError": "Error during update",
+            "createError": "Error during creation",
+            "techUpdated": "Technologies updated",
+            "techUpdateError": "Error updating technologies"
+        },
+        "errors": {
+            "loading": "Error during loading",
+            "delete": "Error during deletion",
+            "directLoad": "Direct loading not available - navigate from a project"
+        },
+        "dialog": {
+            "titleEdit": "Edit an application",
+            "titleAdd": "Add an application",
+            "name": "Name",
+            "description": "Description",
+            "project": "Project",
+            "status": "Status",
+            "statusBuilding": "Building",
+            "statusActive": "Active",
+            "statusMaintenance": "Maintenance",
+            "statusObsolete": "Obsolete",
+            "startDate": "Start date",
+            "repoUrls": "Repository URLs",
+            "addRepo": "Add a repository"
+        },
+        "detail": {
+            "back": "Back",
+            "description": "Description",
+            "startDate": "Start date",
+            "repositories": "Repositories",
+            "none": "None",
+            "edit": "Edit",
+            "techTitle": "Associated technologies",
+            "noTech": "No associated technology",
+            "manageTech": "Manage technologies"
+        },
+        "techSelect": {
+            "title": "Manage technologies",
+            "noItems": "No technology in this category"
+        }
+    },
+    "users": {
+        "title": "Users",
+        "actions": {
+            "add": "Add"
+        },
+        "table": {
+            "columnUsername": "Username",
+            "columnName": "Name",
+            "columnEmail": "Email",
+            "columnRole": "Role",
+            "columnActive": "Active",
+            "columnActions": "Actions",
+            "assignTooltip": "Assign to a project"
+        },
+        "errors": {
+            "loading": "Error loading users"
+        },
+        "notifications": {
+            "created": "User created",
+            "createError": "Error during creation",
+            "assignmentCreated": "Assignment created",
+            "assignmentDeleted": "Assignment deleted",
+            "assignmentError": "Error during assignment",
+            "assignmentDeleteError": "Error during deletion"
+        },
+        "dialog": {
+            "title": "Add a user",
+            "username": "Username",
+            "email": "Email",
+            "firstName": "First name",
+            "lastName": "Last name",
+            "role": "Role",
+            "roleAdmin": "Admin",
+            "roleDirector": "Director",
+            "roleManager": "Manager",
+            "roleDtReferent": "DT Referent"
+        },
+        "assignment": {
+            "title": "Assignments of {{username}}",
+            "project": "Project",
+            "role": "Role",
+            "roleManager": "Manager",
+            "roleDtReferent": "DT Referent",
+            "assign": "Assign",
+            "currentTitle": "Current assignments"
+        }
+    },
+    "categories": {
+        "PROJECT_TECH": "Project Technologies",
+        "WORKSTATION": "Workstation",
+        "IDE": "IDE",
+        "LOCAL_EXECUTION": "Local Execution",
+        "QUALIFICATION_ENV": "Qualification Environment",
+        "PRODUCTION_ENV": "Production Environment",
+        "CONTAINER_TYPE": "Containers",
+        "CI_CD": "CI/CD",
+        "AI_TOOL": "AI Tools"
+    },
+    "auth": {
+        "login": "Login",
+        "logout": "Logout",
+        "username": "Username",
+        "password": "Password",
+        "submit": "Sign in",
+        "error": "Invalid credentials",
+        "welcome": "Welcome, {{name}}"
+    },
+    "errors": {
+        "forbidden": "You do not have access to this resource",
+        "no_access_project": "You are not assigned to this project"
+    },
+    "app": {
+        "title": "Project Monitor"
+    },
+    "kpis": {
+        "title": "Maturity KPIs",
+        "noData": "No maturity data recorded",
+        "edit": "Edit KPIs",
+        "industrialization": "Industrialization",
+        "codeQuality": "Code Quality",
+        "testing": "Testing",
+        "deployment": "Deployment",
+        "obsolescence": "Obsolescence",
+        "aiAdoption": "AI Adoption",
+        "dialog": {
+            "title": "Edit Maturity KPIs",
+            "hint": "Value between 1 and 10"
+        },
+        "justification": "Justification",
+        "justification_placeholder": "Describe the criteria justifying this score...",
+        "notifications": {
+            "updated": "KPIs updated",
+            "updateError": "Error updating KPIs",
+            "loadError": "Error loading KPIs"
+        }
+    },
+    "kpi_history": {
+        "title": "Evaluation History",
+        "dimension": "Dimension",
+        "value": "Value",
+        "justification": "Justification",
+        "evaluated_at": "Evaluation date",
+        "not_evaluated": "Not evaluated",
+        "no_justification": "No justification",
+        "note": "Note: Only the current evaluation is retained. Version history will be available in a later phase."
+    },
+    "aiCases": {
+        "title": "AI Success Cases",
+        "add": "Add case",
+        "edit": "Edit case",
+        "validate": "Validate",
+        "delete": "Delete",
+        "confirmDelete": "Delete this success case?",
+        "fields": {
+            "title": "Title",
+            "tool": "Tool",
+            "profile": "Profile",
+            "description": "Description",
+            "estimatedImpact": "Estimated impact",
+            "caseDate": "Date",
+            "status": "Status"
+        },
+        "profiles": {
+            "dev": "Developer",
+            "ba": "Business Analyst",
+            "pm": "Project Manager",
+            "otro": "Other"
+        },
+        "status": {
+            "PENDING": "Pending",
+            "VALIDATED": "Validated"
+        },
+        "dialog": {
+            "titleCreate": "New AI Success Case",
+            "titleEdit": "Edit AI Success Case"
+        },
+        "notifications": {
+            "created": "Case created",
+            "updated": "Case updated",
+            "validated": "Case validated",
+            "deleted": "Case deleted",
+            "error": "Operation error"
+        },
+        "noCases": "No success cases recorded"
+    },
+    "dashboard": {
+        "title": "Global Dashboard",
+        "projectKpis": "Project KPIs",
+        "clientKpis": "Client KPIs",
+        "globalStats": "Global Statistics",
+        "totalClients": "Total Clients",
+        "totalProjects": "Total Projects",
+        "totalApplications": "Total Applications",
+        "overallAverage": "Overall Average",
+        "status": {
+            "GREEN": "Good",
+            "YELLOW": "Warning",
+            "RED": "Critical"
+        },
+        "columns": {
+            "name": "Name",
+            "average": "Average",
+            "status": "Status",
+            "projects": "Projects",
+            "applications": "Applications"
+        },
+        "noKpis": "No KPI data available"
+    },
+    "risks": {
+        "title": "Identified Risks",
+        "addRisk": "Add Risk",
+        "editRisk": "Edit Risk",
+        "computeRisks": "Recompute Risks",
+        "deleteConfirm": "Are you sure you want to delete this risk?",
+        "noRisks": "No risks identified",
+        "resolved": "Resolved",
+        "active": "Active",
+        "resolve": "Mark as resolved",
+        "unresolve": "Reopen",
+        "type": {
+            "label": "Type",
+            "SECURITY": "Security",
+            "OPERATIONAL": "Operational",
+            "QUALITY": "Quality",
+            "AVAILABILITY": "Availability"
+        },
+        "severity": {
+            "label": "Severity",
+            "CRITICAL": "Critical",
+            "HIGH": "High",
+            "MEDIUM": "Medium",
+            "LOW": "Low"
+        },
+        "source": {
+            "label": "Source",
+            "AUTO": "Automatic",
+            "MANUAL": "Manual"
+        },
+        "fields": {
+            "description": "Description",
+            "actionPlan": "Action Plan",
+            "createdBy": "Created by",
+            "createdAt": "Creation date",
+            "status": "Status"
+        }
+    },
+    "operationalKpis": {
+        "title": "Operational Indicators",
+        "lastDeployment": "Last production deployment",
+        "noDeployment": "No deployment recorded",
+        "criticalCves": "Active critical CVEs",
+        "docUpToDate": "Technical documentation up to date",
+        "edit": "Edit indicators",
+        "save": "Save",
+        "cancel": "Cancel"
+    },
+    "referentWorkload": {
+        "title": "DT Referent Workload",
+        "columns": {
+            "name": "Referent",
+            "projects": "Projects",
+            "applications": "Applications"
+        },
+        "noData": "No data available"
+    },
+    "dashboardExtra": {
+        "docRatio": "Up-to-date documentation ratio",
+        "totalCves": "Total critical CVEs"
+    },
+    "decision_rules": {
+        "title": "",
+        "add": "",
+        "edit": "",
+        "delete": "",
+        "confirm_delete": "",
+        "name": "",
+        "description": "",
+        "dimension": "",
+        "dimension_global": "",
+        "condition_type": "",
+        "condition_value_below": "",
+        "condition_percentage_below": "",
+        "threshold": "",
+        "aggregation_level": "",
+        "level_application": "",
+        "level_project": "",
+        "level_client": "",
+        "level_global": "",
+        "traffic_light_result": "",
+        "active": "",
+        "evaluate": "",
+        "evaluate_result": "",
+        "created": "",
+        "updated": "",
+        "deleted": "",
+        "activated": "",
+        "deactivated": ""
+    },
+    "kpi_dimensions": {
+        "INDUSTRIALIZATION": "Industrialization",
+        "CODE_QUALITY": "Code Quality",
+        "TESTING": "Testing",
+        "DEPLOYMENT": "Deployment",
+        "OBSOLESCENCE": "Obsolescence",
+        "AI_ADOPTION": "AI Adoption"
+    },
+    "kpi_templates": {
+        "title": "KPI Assessment Templates",
+        "create": "New template",
+        "edit": "Edit template",
+        "dimension": "Dimension",
+        "version": "Version",
+        "content": "Content per level",
+        "active": "Active",
+        "level": "Level",
+        "actions": "Actions",
+        "activate": "Activate",
+        "delete_confirm": "Are you sure you want to delete this template?",
+        "created_success": "Template created successfully",
+        "updated_success": "Template updated successfully",
+        "activated_success": "Template activated successfully",
+        "deleted_success": "Template deleted successfully",
+        "no_active_template": "No active template for this dimension",
+        "dimensions": {
+            "INDUSTRIALIZATION": "Industrialization",
+            "CODE_QUALITY": "Code Quality",
+            "TESTING": "Testing",
+            "DEPLOYMENT": "Deployment",
+            "OBSOLESCENCE": "Obsolescence",
+            "AI_ADOPTION": "AI Adoption"
+        }
+    }
+}

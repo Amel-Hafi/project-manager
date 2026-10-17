@@ -1,0 +1,518 @@
+{
+    "common": {
+        "cancel": "Annuler",
+        "save": "Enregistrer",
+        "confirm": "Confirmer",
+        "add": "Ajouter",
+        "delete": "Supprimer",
+        "close": "Fermer",
+        "back": "Retour",
+        "actions": "Actions",
+        "name": "Nom",
+        "description": "Description",
+        "status": "Statut",
+        "loading": "Chargement",
+        "yes": "Oui",
+        "no": "Non",
+        "all": "Tous",
+        "error": {
+            "deletion": "Erreur lors de la suppression",
+            "loading": "Erreur lors du chargement",
+            "update": "Erreur lors de la mise à jour",
+            "create": "Erreur lors de la création"
+        }
+    },
+    "nav": {
+        "dashboard": "Dashboard",
+        "referential": "Référentiel",
+        "clients": "Clients",
+        "projects": "Projets",
+        "applications": "Applicatifs",
+        "users": "Utilisateurs",
+        "decision_rules": "Règles de décision",
+        "kpi_templates": "Modèles KPI"
+    },
+    "referential": {
+        "categories": {
+            "title": "Catégories"
+        },
+        "actions": {
+            "add": "Ajouter"
+        },
+        "table": {
+            "columnName": "Nom",
+            "columnVersion": "Version",
+            "columnStatus": "Statut",
+            "columnActions": "Actions"
+        },
+        "placeholder": "Sélectionnez une catégorie pour voir les technologies",
+        "errors": {
+            "loadCategories": "Erreur lors du chargement des catégories",
+            "loadItems": "Erreur lors du chargement des technologies",
+            "delete": "Erreur lors de la suppression"
+        },
+        "confirm": {
+            "deleteTitle": "Supprimer",
+            "deleteMessage": "Supprimer la technologie \"{{name}}\" ?"
+        },
+        "notifications": {
+            "deleted": "Technologie supprimée",
+            "updated": "Technologie mise à jour",
+            "created": "Technologie créée",
+            "updateError": "Erreur lors de la mise à jour",
+            "createError": "Erreur lors de la création"
+        },
+        "dialog": {
+            "titleEdit": "Modifier une technologie",
+            "titleAdd": "Ajouter une technologie",
+            "name": "Nom",
+            "version": "Version",
+            "description": "Description",
+            "status": "Statut",
+            "statusActive": "Active",
+            "statusObsolete": "Obsolète"
+        },
+        "deactivate": "",
+        "reactivate": "",
+        "status_deprecated": "",
+        "confirm_deactivate": "",
+        "confirm_reactivate": "",
+        "deactivated_success": "",
+        "reactivated_success": ""
+    },
+    "clients": {
+        "title": "Clients",
+        "actions": {
+            "add": "Ajouter"
+        },
+        "table": {
+            "columnName": "Nom",
+            "columnDescription": "Description",
+            "columnActions": "Actions"
+        },
+        "confirm": {
+            "deleteTitle": "Supprimer",
+            "deleteMessage": "Supprimer le client \"{{name}}\" ?"
+        },
+        "notifications": {
+            "deleted": "Client supprimé",
+            "updated": "Client mis à jour",
+            "created": "Client créé",
+            "updateError": "Erreur lors de la mise à jour",
+            "createError": "Erreur lors de la création"
+        },
+        "errors": {
+            "loading": "Erreur lors du chargement des clients",
+            "delete": "Erreur lors de la suppression"
+        },
+        "dialog": {
+            "titleEdit": "Modifier un client",
+            "titleAdd": "Ajouter un client",
+            "name": "Nom",
+            "description": "Description"
+        },
+        "detail": {
+            "backToClients": "Retour aux clients",
+            "projectsTitle": "Projets du client",
+            "addProject": "Ajouter un projet",
+            "errors": {
+                "loadProjects": "Erreur lors du chargement des projets"
+            }
+        }
+    },
+    "projects": {
+        "title": "Projets",
+        "actions": {
+            "add": "Ajouter"
+        },
+        "table": {
+            "columnName": "Nom",
+            "columnClient": "Client",
+            "columnDescription": "Description",
+            "columnActions": "Actions"
+        },
+        "confirm": {
+            "deleteTitle": "Supprimer",
+            "deleteMessage": "Supprimer le projet \"{{name}}\" ?"
+        },
+        "notifications": {
+            "deleted": "Projet supprimé",
+            "updated": "Projet mis à jour",
+            "created": "Projet créé",
+            "updateError": "Erreur lors de la mise à jour",
+            "createError": "Erreur lors de la création"
+        },
+        "errors": {
+            "loading": "Erreur lors du chargement",
+            "loadClients": "Erreur lors du chargement des clients",
+            "delete": "Erreur lors de la suppression"
+        },
+        "dialog": {
+            "titleEdit": "Modifier un projet",
+            "titleAdd": "Ajouter un projet",
+            "name": "Nom",
+            "description": "Description",
+            "client": "Client"
+        },
+        "detail": {
+            "backToProjects": "Retour aux projets",
+            "applicationsTitle": "Applications du projet",
+            "addApplication": "Ajouter une application",
+            "errors": {
+                "loadApplications": "Erreur lors du chargement des applications"
+            }
+        }
+    },
+    "applications": {
+        "title": "Applicatifs",
+        "actions": {
+            "add": "Ajouter"
+        },
+        "table": {
+            "columnName": "Nom",
+            "columnProject": "Projet",
+            "columnStatus": "Statut",
+            "columnActions": "Actions"
+        },
+        "confirm": {
+            "deleteTitle": "Supprimer",
+            "deleteMessage": "Supprimer l'application \"{{name}}\" ?"
+        },
+        "notifications": {
+            "deleted": "Application supprimée",
+            "updated": "Application mise à jour",
+            "created": "Application créée",
+            "updateError": "Erreur lors de la mise à jour",
+            "createError": "Erreur lors de la création",
+            "techUpdated": "Technologies mises à jour",
+            "techUpdateError": "Erreur lors de la mise à jour des technologies"
+        },
+        "errors": {
+            "loading": "Erreur lors du chargement",
+            "delete": "Erreur lors de la suppression",
+            "directLoad": "Chargement direct non disponible - naviguez depuis un projet"
+        },
+        "dialog": {
+            "titleEdit": "Modifier une application",
+            "titleAdd": "Ajouter une application",
+            "name": "Nom",
+            "description": "Description",
+            "project": "Projet",
+            "status": "Statut",
+            "statusBuilding": "En construction",
+            "statusActive": "Active",
+            "statusMaintenance": "Maintenance",
+            "statusObsolete": "Obsolète",
+            "startDate": "Date de début",
+            "repoUrls": "URLs des dépôts",
+            "addRepo": "Ajouter un dépôt"
+        },
+        "detail": {
+            "back": "Retour",
+            "description": "Description",
+            "startDate": "Date de début",
+            "repositories": "Dépôts",
+            "none": "Aucun",
+            "edit": "Modifier",
+            "techTitle": "Technologies associées",
+            "noTech": "Aucune technologie associée",
+            "manageTech": "Gérer les technologies"
+        },
+        "techSelect": {
+            "title": "Gérer les technologies",
+            "noItems": "Aucune technologie dans cette catégorie"
+        }
+    },
+    "users": {
+        "title": "Utilisateurs",
+        "actions": {
+            "add": "Ajouter"
+        },
+        "table": {
+            "columnUsername": "Identifiant",
+            "columnName": "Nom",
+            "columnEmail": "Email",
+            "columnRole": "Rôle",
+            "columnActive": "Actif",
+            "columnActions": "Actions",
+            "assignTooltip": "Affecter à un projet"
+        },
+        "errors": {
+            "loading": "Erreur lors du chargement des utilisateurs"
+        },
+        "notifications": {
+            "created": "Utilisateur créé",
+            "createError": "Erreur lors de la création",
+            "assignmentCreated": "Affectation créée",
+            "assignmentDeleted": "Affectation supprimée",
+            "assignmentError": "Erreur lors de l'affectation",
+            "assignmentDeleteError": "Erreur lors de la suppression"
+        },
+        "dialog": {
+            "title": "Ajouter un utilisateur",
+            "username": "Identifiant",
+            "email": "Email",
+            "firstName": "Prénom",
+            "lastName": "Nom",
+            "role": "Rôle",
+            "roleAdmin": "Admin",
+            "roleDirector": "Directeur",
+            "roleManager": "Manager",
+            "roleDtReferent": "Référent DT"
+        },
+        "assignment": {
+            "title": "Affectations de {{username}}",
+            "project": "Projet",
+            "role": "Rôle",
+            "roleManager": "Manager",
+            "roleDtReferent": "Référent DT",
+            "assign": "Affecter",
+            "currentTitle": "Affectations actuelles"
+        }
+    },
+    "categories": {
+        "PROJECT_TECH": "Technologies Projet",
+        "WORKSTATION": "Poste de travail",
+        "IDE": "IDE",
+        "LOCAL_EXECUTION": "Exécution locale",
+        "QUALIFICATION_ENV": "Environnement de qualification",
+        "PRODUCTION_ENV": "Environnement de production",
+        "CONTAINER_TYPE": "Conteneurisation",
+        "CI_CD": "CI/CD",
+        "AI_TOOL": "Outils IA"
+    },
+    "auth": {
+        "login": "Connexion",
+        "logout": "Déconnexion",
+        "username": "Nom d'utilisateur",
+        "password": "Mot de passe",
+        "submit": "Se connecter",
+        "error": "Identifiants invalides",
+        "welcome": "Bienvenue, {{name}}"
+    },
+    "errors": {
+        "forbidden": "Vous n'avez pas accès à cette ressource",
+        "no_access_project": "Vous n'avez pas d'affectation à ce projet"
+    },
+    "app": {
+        "title": "Project Monitor"
+    },
+    "kpis": {
+        "title": "KPIs de Maturité",
+        "noData": "Aucune donnée de maturité enregistrée",
+        "edit": "Modifier les KPIs",
+        "industrialization": "Industrialisation",
+        "codeQuality": "Qualité de code",
+        "testing": "Testing",
+        "deployment": "Déploiement",
+        "obsolescence": "Obsolescence",
+        "aiAdoption": "Adoption IA",
+        "dialog": {
+            "title": "Modifier les KPIs de Maturité",
+            "hint": "Valeur entre 1 et 10"
+        },
+        "justification": "Justification",
+        "justification_placeholder": "Décrivez les critères justifiant cette note...",
+        "notifications": {
+            "updated": "KPIs mis à jour",
+            "updateError": "Erreur lors de la mise à jour des KPIs",
+            "loadError": "Erreur lors du chargement des KPIs"
+        }
+    },
+    "kpi_history": {
+        "title": "Historique des évaluations",
+        "dimension": "Dimension",
+        "value": "Valeur",
+        "justification": "Justification",
+        "evaluated_at": "Date d'évaluation",
+        "not_evaluated": "Non évalué",
+        "no_justification": "Aucune justification",
+        "note": "Note : Seule l'évaluation actuelle est conservée. L'historique des versions sera disponible dans une phase ultérieure."
+    },
+    "aiCases": {
+        "title": "Cas de Succès IA",
+        "add": "Ajouter un cas",
+        "edit": "Modifier le cas",
+        "validate": "Valider",
+        "delete": "Supprimer",
+        "confirmDelete": "Supprimer ce cas de succès ?",
+        "fields": {
+            "title": "Titre",
+            "tool": "Outil",
+            "profile": "Profil",
+            "description": "Description",
+            "estimatedImpact": "Impact estimé",
+            "caseDate": "Date",
+            "status": "Statut"
+        },
+        "profiles": {
+            "dev": "Développeur",
+            "ba": "Business Analyst",
+            "pm": "Chef de projet",
+            "otro": "Autre"
+        },
+        "status": {
+            "PENDING": "En attente",
+            "VALIDATED": "Validé"
+        },
+        "dialog": {
+            "titleCreate": "Nouveau Cas de Succès IA",
+            "titleEdit": "Modifier le Cas de Succès IA"
+        },
+        "notifications": {
+            "created": "Cas créé",
+            "updated": "Cas mis à jour",
+            "validated": "Cas validé",
+            "deleted": "Cas supprimé",
+            "error": "Erreur lors de l'opération"
+        },
+        "noCases": "Aucun cas de succès enregistré"
+    },
+    "dashboard": {
+        "title": "Dashboard Global",
+        "projectKpis": "KPIs du Projet",
+        "clientKpis": "KPIs du Client",
+        "globalStats": "Statistiques Globales",
+        "totalClients": "Total Clients",
+        "totalProjects": "Total Projets",
+        "totalApplications": "Total Applications",
+        "overallAverage": "Moyenne Globale",
+        "status": {
+            "GREEN": "Bon",
+            "YELLOW": "Attention",
+            "RED": "Critique"
+        },
+        "columns": {
+            "name": "Nom",
+            "average": "Moyenne",
+            "status": "Statut",
+            "projects": "Projets",
+            "applications": "Applications"
+        },
+        "noKpis": "Aucune donnée KPI disponible"
+    },
+    "risks": {
+        "title": "Risques Identifiés",
+        "addRisk": "Ajouter un Risque",
+        "editRisk": "Modifier le Risque",
+        "computeRisks": "Recalculer les Risques",
+        "deleteConfirm": "Êtes-vous sûr de vouloir supprimer ce risque ?",
+        "noRisks": "Aucun risque identifié",
+        "resolved": "Résolu",
+        "active": "Actif",
+        "resolve": "Marquer comme résolu",
+        "unresolve": "Rouvrir",
+        "type": {
+            "label": "Type",
+            "SECURITY": "Sécurité",
+            "OPERATIONAL": "Opérationnel",
+            "QUALITY": "Qualité",
+            "AVAILABILITY": "Disponibilité"
+        },
+        "severity": {
+            "label": "Sévérité",
+            "CRITICAL": "Critique",
+            "HIGH": "Haute",
+            "MEDIUM": "Moyenne",
+            "LOW": "Basse"
+        },
+        "source": {
+            "label": "Origine",
+            "AUTO": "Automatique",
+            "MANUAL": "Manuel"
+        },
+        "fields": {
+            "description": "Description",
+            "actionPlan": "Plan d'Action",
+            "createdBy": "Créé par",
+            "createdAt": "Date de création",
+            "status": "Statut"
+        }
+    },
+    "operationalKpis": {
+        "title": "Indicateurs Opérationnels",
+        "lastDeployment": "Dernier déploiement en production",
+        "noDeployment": "Aucun déploiement enregistré",
+        "criticalCves": "CVEs critiques actifs",
+        "docUpToDate": "Documentation technique à jour",
+        "edit": "Modifier les indicateurs",
+        "save": "Enregistrer",
+        "cancel": "Annuler"
+    },
+    "referentWorkload": {
+        "title": "Charge par Référent DT",
+        "columns": {
+            "name": "Référent",
+            "projects": "Projets",
+            "applications": "Applications"
+        },
+        "noData": "Aucune donnée disponible"
+    },
+    "dashboardExtra": {
+        "docRatio": "Ratio documentation à jour",
+        "totalCves": "CVEs critiques totaux"
+    },
+    "decision_rules": {
+        "title": "",
+        "add": "",
+        "edit": "",
+        "delete": "",
+        "confirm_delete": "",
+        "name": "",
+        "description": "",
+        "dimension": "",
+        "dimension_global": "",
+        "condition_type": "",
+        "condition_value_below": "",
+        "condition_percentage_below": "",
+        "threshold": "",
+        "aggregation_level": "",
+        "level_application": "",
+        "level_project": "",
+        "level_client": "",
+        "level_global": "",
+        "traffic_light_result": "",
+        "active": "",
+        "evaluate": "",
+        "evaluate_result": "",
+        "created": "",
+        "updated": "",
+        "deleted": "",
+        "activated": "",
+        "deactivated": ""
+    },
+    "kpi_dimensions": {
+        "INDUSTRIALIZATION": "Industrialisation",
+        "CODE_QUALITY": "Qualité de code",
+        "TESTING": "Testing",
+        "DEPLOYMENT": "Déploiement",
+        "OBSOLESCENCE": "Obsolescence",
+        "AI_ADOPTION": "Adoption IA"
+    },
+    "kpi_templates": {
+        "title": "Modèles de valorisation KPI",
+        "create": "Nouveau modèle",
+        "edit": "Modifier le modèle",
+        "dimension": "Dimension",
+        "version": "Version",
+        "content": "Contenu par niveau",
+        "active": "Actif",
+        "level": "Niveau",
+        "actions": "Actions",
+        "activate": "Activer",
+        "delete_confirm": "Êtes-vous sûr de vouloir supprimer ce modèle ?",
+        "created_success": "Modèle créé avec succès",
+        "updated_success": "Modèle mis à jour avec succès",
+        "activated_success": "Modèle activé avec succès",
+        "deleted_success": "Modèle supprimé avec succès",
+        "no_active_template": "Aucun modèle actif pour cette dimension",
+        "dimensions": {
+            "INDUSTRIALIZATION": "Industrialisation",
+            "CODE_QUALITY": "Qualité de code",
+            "TESTING": "Testing",
+            "DEPLOYMENT": "Déploiement",
+            "OBSOLESCENCE": "Obsolescence",
+            "AI_ADOPTION": "Adoption IA"
+        }
+    }
+}

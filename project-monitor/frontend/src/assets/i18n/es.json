@@ -1,0 +1,521 @@
+{
+    "common": {
+        "cancel": "Cancelar",
+        "save": "Guardar",
+        "confirm": "Confirmar",
+        "add": "Añadir",
+        "delete": "Eliminar",
+        "close": "Cerrar",
+        "back": "Volver",
+        "actions": "Acciones",
+        "name": "Nombre",
+        "description": "Descripción",
+        "status": "Estado",
+        "loading": "Cargando",
+        "yes": "Sí",
+        "no": "No",
+        "all": "Todos",
+        "error": {
+            "deletion": "Error al eliminar",
+            "loading": "Error al cargar",
+            "update": "Error al actualizar",
+            "create": "Error al crear"
+        }
+    },
+    "nav": {
+        "dashboard": "Dashboard",
+        "referential": "Referencial",
+        "clients": "Clientes",
+        "projects": "Proyectos",
+        "applications": "Aplicaciones",
+        "users": "Usuarios",
+        "decision_rules": "Reglas de decisión",
+        "kpi_templates": "Plantillas KPI"
+    },
+    "referential": {
+        "categories": {
+            "title": "Categorías"
+        },
+        "actions": {
+            "add": "Añadir"
+        },
+        "table": {
+            "columnName": "Nombre",
+            "columnVersion": "Versión",
+            "columnStatus": "Estado",
+            "columnActions": "Acciones"
+        },
+        "placeholder": "Seleccione una categoría para ver las tecnologías",
+        "errors": {
+            "loadCategories": "Error al cargar las categorías",
+            "loadItems": "Error al cargar las tecnologías",
+            "delete": "Error al eliminar"
+        },
+        "confirm": {
+            "deleteTitle": "Eliminar",
+            "deleteMessage": "¿Eliminar la tecnología \"{{name}}\"?"
+        },
+        "notifications": {
+            "deleted": "Tecnología eliminada",
+            "updated": "Tecnología actualizada",
+            "created": "Tecnología creada",
+            "updateError": "Error al actualizar",
+            "createError": "Error al crear"
+        },
+        "dialog": {
+            "titleEdit": "Modificar una tecnología",
+            "titleAdd": "Añadir una tecnología",
+            "name": "Nombre",
+            "version": "Versión",
+            "description": "Descripción",
+            "status": "Estado",
+            "statusActive": "Activo",
+            "statusObsolete": "Obsoleto"
+        },
+        "deactivate": "Desactivar",
+        "reactivate": "Reactivar",
+        "status_active": "Activo",
+        "status_obsolete": "Obsoleto",
+        "status_deprecated": "Dado de baja",
+        "confirm_deactivate": "¿Está seguro de desactivar este elemento? Las asociaciones existentes se conservarán.",
+        "confirm_reactivate": "¿Está seguro de reactivar este elemento?",
+        "deactivated_success": "Elemento desactivado correctamente",
+        "reactivated_success": "Elemento reactivado correctamente"
+    },
+    "clients": {
+        "title": "Clientes",
+        "actions": {
+            "add": "Añadir"
+        },
+        "table": {
+            "columnName": "Nombre",
+            "columnDescription": "Descripción",
+            "columnActions": "Acciones"
+        },
+        "confirm": {
+            "deleteTitle": "Eliminar",
+            "deleteMessage": "¿Eliminar el cliente \"{{name}}\"?"
+        },
+        "notifications": {
+            "deleted": "Cliente eliminado",
+            "updated": "Cliente actualizado",
+            "created": "Cliente creado",
+            "updateError": "Error al actualizar",
+            "createError": "Error al crear"
+        },
+        "errors": {
+            "loading": "Error al cargar los clientes",
+            "delete": "Error al eliminar"
+        },
+        "dialog": {
+            "titleEdit": "Modificar un cliente",
+            "titleAdd": "Añadir un cliente",
+            "name": "Nombre",
+            "description": "Descripción"
+        },
+        "detail": {
+            "backToClients": "Volver a clientes",
+            "projectsTitle": "Proyectos del cliente",
+            "addProject": "Añadir un proyecto",
+            "errors": {
+                "loadProjects": "Error al cargar los proyectos"
+            }
+        }
+    },
+    "projects": {
+        "title": "Proyectos",
+        "actions": {
+            "add": "Añadir"
+        },
+        "table": {
+            "columnName": "Nombre",
+            "columnClient": "Cliente",
+            "columnDescription": "Descripción",
+            "columnActions": "Acciones"
+        },
+        "confirm": {
+            "deleteTitle": "Eliminar",
+            "deleteMessage": "¿Eliminar el proyecto \"{{name}}\"?"
+        },
+        "notifications": {
+            "deleted": "Proyecto eliminado",
+            "updated": "Proyecto actualizado",
+            "created": "Proyecto creado",
+            "updateError": "Error al actualizar",
+            "createError": "Error al crear"
+        },
+        "errors": {
+            "loading": "Error al cargar",
+            "loadClients": "Error al cargar los clientes",
+            "delete": "Error al eliminar"
+        },
+        "dialog": {
+            "titleEdit": "Modificar un proyecto",
+            "titleAdd": "Añadir un proyecto",
+            "name": "Nombre",
+            "description": "Descripción",
+            "client": "Cliente"
+        },
+        "detail": {
+            "backToProjects": "Volver a proyectos",
+            "applicationsTitle": "Aplicaciones del proyecto",
+            "addApplication": "Añadir una aplicación",
+            "errors": {
+                "loadApplications": "Error al cargar las aplicaciones"
+            }
+        }
+    },
+    "applications": {
+        "title": "Aplicaciones",
+        "actions": {
+            "add": "Añadir"
+        },
+        "table": {
+            "columnName": "Nombre",
+            "columnProject": "Proyecto",
+            "columnStatus": "Estado",
+            "columnActions": "Acciones"
+        },
+        "confirm": {
+            "deleteTitle": "Eliminar",
+            "deleteMessage": "¿Eliminar la aplicación \"{{name}}\"?"
+        },
+        "notifications": {
+            "deleted": "Aplicación eliminada",
+            "updated": "Aplicación actualizada",
+            "created": "Aplicación creada",
+            "updateError": "Error al actualizar",
+            "createError": "Error al crear",
+            "techUpdated": "Tecnologías actualizadas",
+            "techUpdateError": "Error al actualizar las tecnologías"
+        },
+        "errors": {
+            "loading": "Error al cargar",
+            "delete": "Error al eliminar",
+            "directLoad": "Carga directa no disponible - navegue desde un proyecto",
+            "loadFailed": "Error al cargar la aplicación"
+        },
+        "dialog": {
+            "titleEdit": "Modificar una aplicación",
+            "titleAdd": "Añadir una aplicación",
+            "name": "Nombre",
+            "description": "Descripción",
+            "project": "Proyecto",
+            "status": "Estado",
+            "statusBuilding": "En construcción",
+            "statusActive": "Activa",
+            "statusMaintenance": "Mantenimiento",
+            "statusObsolete": "Obsoleta",
+            "startDate": "Fecha de inicio",
+            "repoUrls": "URLs de los repositorios",
+            "addRepo": "Añadir un repositorio"
+        },
+        "detail": {
+            "back": "Volver",
+            "description": "Descripción",
+            "startDate": "Fecha de inicio",
+            "repositories": "Repositorios",
+            "none": "Ninguno",
+            "edit": "Modificar",
+            "techTitle": "Tecnologías asociadas",
+            "noTech": "Ninguna tecnología asociada",
+            "manageTech": "Gestionar las tecnologías"
+        },
+        "techSelect": {
+            "title": "Gestionar las tecnologías",
+            "noItems": "Ninguna tecnología en esta categoría"
+        }
+    },
+    "users": {
+        "title": "Usuarios",
+        "actions": {
+            "add": "Añadir"
+        },
+        "table": {
+            "columnUsername": "Identificador",
+            "columnName": "Nombre",
+            "columnEmail": "Email",
+            "columnRole": "Rol",
+            "columnActive": "Activo",
+            "columnActions": "Acciones",
+            "assignTooltip": "Asignar a un proyecto"
+        },
+        "errors": {
+            "loading": "Error al cargar los usuarios"
+        },
+        "notifications": {
+            "created": "Usuario creado",
+            "createError": "Error al crear",
+            "assignmentCreated": "Asignación creada",
+            "assignmentDeleted": "Asignación eliminada",
+            "assignmentError": "Error en la asignación",
+            "assignmentDeleteError": "Error al eliminar"
+        },
+        "dialog": {
+            "title": "Añadir un usuario",
+            "username": "Identificador",
+            "email": "Email",
+            "firstName": "Nombre",
+            "lastName": "Apellido",
+            "role": "Rol",
+            "roleAdmin": "Admin",
+            "roleDirector": "Director",
+            "roleManager": "Manager",
+            "roleDtReferent": "Referente DT"
+        },
+        "assignment": {
+            "title": "Asignaciones de {{username}}",
+            "project": "Proyecto",
+            "role": "Rol",
+            "roleManager": "Manager",
+            "roleDtReferent": "Referente DT",
+            "assign": "Asignar",
+            "currentTitle": "Asignaciones actuales"
+        }
+    },
+    "categories": {
+        "PROJECT_TECH": "Tecnologías de proyecto",
+        "WORKSTATION": "Puesto de trabajo",
+        "IDE": "IDE",
+        "LOCAL_EXECUTION": "Ejecución local",
+        "QUALIFICATION_ENV": "Entorno de cualificación",
+        "PRODUCTION_ENV": "Entorno de producción",
+        "CONTAINER_TYPE": "Contenedores",
+        "CI_CD": "CI/CD",
+        "AI_TOOL": "Herramientas IA"
+    },
+    "auth": {
+        "login": "Iniciar sesión",
+        "logout": "Cerrar sesión",
+        "username": "Nombre de usuario",
+        "password": "Contraseña",
+        "submit": "Entrar",
+        "error": "Credenciales inválidas",
+        "welcome": "Bienvenido, {{name}}"
+    },
+    "errors": {
+        "forbidden": "No tienes acceso a este recurso",
+        "no_access_project": "No tienes asignación a este proyecto"
+    },
+    "app": {
+        "title": "Project Monitor"
+    },
+    "kpis": {
+        "title": "KPIs de Madurez",
+        "noData": "Sin datos de madurez registrados",
+        "edit": "Editar KPIs",
+        "industrialization": "Industrialización",
+        "codeQuality": "Calidad de código",
+        "testing": "Testing",
+        "deployment": "Despliegue",
+        "obsolescence": "Obsolescencia",
+        "aiAdoption": "Adopción IA",
+        "dialog": {
+            "title": "Editar KPIs de Madurez",
+            "hint": "Valor entre 1 y 10"
+        },
+        "justification": "Justificación",
+        "justification_placeholder": "Describa los criterios que justifican esta puntuación...",
+        "notifications": {
+            "updated": "KPIs actualizados",
+            "updateError": "Error al actualizar los KPIs",
+            "loadError": "Error al cargar los KPIs"
+        }
+    },
+    "kpi_history": {
+        "title": "Histórico de evaluaciones",
+        "dimension": "Dimensión",
+        "value": "Valor",
+        "justification": "Justificación",
+        "evaluated_at": "Fecha de evaluación",
+        "not_evaluated": "Sin evaluar",
+        "no_justification": "Sin justificación",
+        "note": "Nota: Solo se conserva la evaluación actual. El historial de versiones estará disponible en una fase posterior."
+    },
+    "aiCases": {
+        "title": "Casos de Éxito IA",
+        "add": "Añadir caso",
+        "edit": "Editar caso",
+        "validate": "Validar",
+        "delete": "Eliminar",
+        "confirmDelete": "¿Eliminar este caso de éxito?",
+        "fields": {
+            "title": "Título",
+            "tool": "Herramienta",
+            "profile": "Perfil",
+            "description": "Descripción",
+            "estimatedImpact": "Impacto estimado",
+            "caseDate": "Fecha",
+            "status": "Estado"
+        },
+        "profiles": {
+            "dev": "Desarrollador",
+            "ba": "Business Analyst",
+            "pm": "Project Manager",
+            "otro": "Otro"
+        },
+        "status": {
+            "PENDING": "Pendiente",
+            "VALIDATED": "Validado"
+        },
+        "dialog": {
+            "titleCreate": "Nuevo Caso de Éxito IA",
+            "titleEdit": "Editar Caso de Éxito IA"
+        },
+        "notifications": {
+            "created": "Caso creado",
+            "updated": "Caso actualizado",
+            "validated": "Caso validado",
+            "deleted": "Caso eliminado",
+            "error": "Error en la operación"
+        },
+        "noCases": "No hay casos de éxito registrados"
+    },
+    "dashboard": {
+        "title": "Dashboard Global",
+        "projectKpis": "KPIs del Proyecto",
+        "clientKpis": "KPIs del Cliente",
+        "globalStats": "Estadísticas Globales",
+        "totalClients": "Total Clientes",
+        "totalProjects": "Total Proyectos",
+        "totalApplications": "Total Aplicativos",
+        "overallAverage": "Media Global",
+        "status": {
+            "GREEN": "Bueno",
+            "YELLOW": "Atención",
+            "RED": "Crítico"
+        },
+        "columns": {
+            "name": "Nombre",
+            "average": "Media",
+            "status": "Estado",
+            "projects": "Proyectos",
+            "applications": "Aplicativos"
+        },
+        "noKpis": "Sin datos de KPIs disponibles"
+    },
+    "risks": {
+        "title": "Riesgos Identificados",
+        "addRisk": "Añadir Riesgo",
+        "editRisk": "Editar Riesgo",
+        "computeRisks": "Recalcular Riesgos",
+        "deleteConfirm": "¿Está seguro de eliminar este riesgo?",
+        "noRisks": "No hay riesgos identificados",
+        "resolved": "Resuelto",
+        "active": "Activo",
+        "resolve": "Marcar como resuelto",
+        "unresolve": "Reabrir",
+        "type": {
+            "label": "Tipo",
+            "SECURITY": "Seguridad",
+            "OPERATIONAL": "Operacional",
+            "QUALITY": "Calidad",
+            "AVAILABILITY": "Disponibilidad"
+        },
+        "severity": {
+            "label": "Severidad",
+            "CRITICAL": "Crítica",
+            "HIGH": "Alta",
+            "MEDIUM": "Media",
+            "LOW": "Baja"
+        },
+        "source": {
+            "label": "Origen",
+            "AUTO": "Automático",
+            "MANUAL": "Manual"
+        },
+        "fields": {
+            "description": "Descripción",
+            "actionPlan": "Plan de Acción",
+            "createdBy": "Creado por",
+            "createdAt": "Fecha de creación",
+            "status": "Estado"
+        }
+    },
+    "operationalKpis": {
+        "title": "Indicadores Operacionales",
+        "lastDeployment": "Último despliegue en producción",
+        "noDeployment": "Sin despliegue registrado",
+        "criticalCves": "CVEs críticos activos",
+        "docUpToDate": "Documentación técnica actualizada",
+        "edit": "Editar indicadores",
+        "save": "Guardar",
+        "cancel": "Cancelar"
+    },
+    "referentWorkload": {
+        "title": "Carga por Referente DT",
+        "columns": {
+            "name": "Referente",
+            "projects": "Proyectos",
+            "applications": "Aplicativos"
+        },
+        "noData": "Sin datos disponibles"
+    },
+    "dashboardExtra": {
+        "docRatio": "Ratio documentación actualizada",
+        "totalCves": "CVEs críticos totales"
+    },
+    "decision_rules": {
+        "title": "Reglas de decisión",
+        "add": "Añadir regla",
+        "edit": "Editar regla",
+        "delete": "Eliminar regla",
+        "confirm_delete": "¿Está seguro de que desea eliminar esta regla?",
+        "name": "Nombre",
+        "description": "Descripción",
+        "dimension": "Dimensión",
+        "dimension_global": "Media global",
+        "condition_type": "Tipo de condición",
+        "condition_value_below": "Valor por debajo del umbral",
+        "condition_percentage_below": "Porcentaje por debajo del umbral",
+        "threshold": "Umbral",
+        "aggregation_level": "Nivel de agregación",
+        "level_application": "Aplicativo",
+        "level_project": "Proyecto",
+        "level_client": "Cliente",
+        "level_global": "Global",
+        "traffic_light_result": "Semáforo resultante",
+        "active": "Activa",
+        "evaluate": "Evaluar ahora",
+        "evaluate_result": "Evaluación completada: {{evaluated}} evaluados, {{created}} riesgos creados, {{resolved}} resueltos",
+        "created": "Regla creada con éxito",
+        "updated": "Regla actualizada con éxito",
+        "deleted": "Regla eliminada con éxito",
+        "activated": "Regla activada",
+        "deactivated": "Regla desactivada"
+    },
+    "kpi_dimensions": {
+        "INDUSTRIALIZATION": "Industrialización",
+        "CODE_QUALITY": "Calidad de código",
+        "TESTING": "Testing",
+        "DEPLOYMENT": "Despliegue",
+        "OBSOLESCENCE": "Obsolescencia",
+        "AI_ADOPTION": "Adopción IA"
+    },
+    "kpi_templates": {
+        "title": "Plantillas de valoración KPI",
+        "create": "Nueva plantilla",
+        "edit": "Editar plantilla",
+        "dimension": "Dimensión",
+        "version": "Versión",
+        "content": "Contenido por nivel",
+        "active": "Activa",
+        "level": "Nivel",
+        "actions": "Acciones",
+        "activate": "Activar",
+        "delete_confirm": "¿Está seguro de eliminar esta plantilla?",
+        "created_success": "Plantilla creada correctamente",
+        "updated_success": "Plantilla actualizada correctamente",
+        "activated_success": "Plantilla activada correctamente",
+        "deleted_success": "Plantilla eliminada correctamente",
+        "no_active_template": "No hay plantilla activa para esta dimensión",
+        "dimensions": {
+            "INDUSTRIALIZATION": "Industrialización",
+            "CODE_QUALITY": "Calidad de código",
+            "TESTING": "Testing",
+            "DEPLOYMENT": "Despliegue",
+            "OBSOLESCENCE": "Obsolescencia",
+            "AI_ADOPTION": "Adopción IA"
+        }
+    }
+}

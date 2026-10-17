@@ -1,0 +1,143 @@
+# GitLab CI/CD Pipeline for Project Monitor
+# Triggers on push to master and merge requests targeting master
+
+stages:
+  - build
+  - security
+  - docker
+
+# ------------------------------------------------------------------------------
+# Global workflow rules
+# ------------------------------------------------------------------------------
+workflow:
+  rules:
+    - if: $CI_COMMIT_BRANCH == "master"
+    - if: $CI_MERGE_REQUEST_TARGET_BRANCH_NAME == "master"
+
+# ------------------------------------------------------------------------------
+# Stage: build
+# ------------------------------------------------------------------------------
+
+backend:
+  stage: build
+  image: maven:3.9-eclipse-temurin-21
+  cache:
+    key: maven-cache
+    paths:
+      - .m2/repository
+  variables:
+    MAVEN_OPTS: "-Dmaven.repo.local=$CI_PROJECT_DIR/.m2/repository"
+  script:
+    - cd backend
+    - mvn verify --batch-mode --fail-at-end
+  artifacts:
+    when: always
+    paths:
+      - backend/target/surefire-reports/
+      - backend/target/*.jar
+    reports:
+      junit: backend/target/surefire-reports/TEST-*.xml
+
+frontend:
+  stage: build
+  image: node:20
+  variables:
+    CHROME_BIN: /usr/bin/chromium
+  cache:
+    key: npm-cache
+    paths:
+      - frontend/node_modules
+  before_script:
+    - apt-get update && apt-get install -y chromium --no-install-recommends
+  script:
+    - cd frontend
+    - npm ci
+    - npx ng test --watch=false --browsers=ChromeHeadlessNoSandbox
+    - npx ng build --configuration=production
+  artifacts:
+    paths:
+      - frontend/dist/
+
+# ------------------------------------------------------------------------------
+# Stage: security
+# ------------------------------------------------------------------------------
+
+security:frontend:
+  stage: security
+  image: node:20
+  needs:
+    - frontend
+  allow_failure: true
+  cache:
+    key: npm-cache
+    paths:
+      - frontend/node_modules
+  script:
+    - cd frontend
+    - npm ci
+    - npm audit --audit-level=high --omit=dev
+
+security:backend:
+  stage: security
+  image: maven:3.9-eclipse-temurin-21
+  needs:
+    - backend
+  allow_failure: true
+  timeout: 25 minutes
+  cache:
+    - key: maven-cache
+      paths:
+        - .m2/repository
+    - key: owasp-nvd-cache
+      paths:
+        - .dependency-check-data/
+  variables:
+    MAVEN_OPTS: "-Dmaven.repo.local=$CI_PROJECT_DIR/.m2/repository -Xmx1g"
+  # NVD_API_KEY must be set as a CI/CD variable in GitLab (Settings > CI/CD > Variables).
+  # Get a free API key from: https://nvd.nist.gov/developers/request-an-api-key
+  # Without it, the NVD database download (355k+ records) takes a very long time.
+  script:
+    - cd backend
+    - >-
+      mvn org.owasp:dependency-check-maven:check --batch-mode
+      -DfailBuildOnCVSS=7
+      -DnvdApiDelay=6000
+      -DnvdValidForHours=24
+      -DnvdApiKey=$NVD_API_KEY
+      -DdataDirectory=$CI_PROJECT_DIR/.dependency-check-data
+  artifacts:
+    when: always
+    paths:
+      - backend/target/dependency-check-report.html
+
+# ------------------------------------------------------------------------------
+# Stage: docker
+# ------------------------------------------------------------------------------
+
+docker:backend:
+  stage: docker
+  image:
+    name: gcr.io/kaniko-project/executor:v1.23.2-debug
+    entrypoint: [""]
+  needs:
+    - security:backend
+    - security:frontend
+  script:
+    - /kaniko/executor
+      --context=$CI_PROJECT_DIR/backend
+      --dockerfile=$CI_PROJECT_DIR/backend/Dockerfile
+      --no-push
+
+docker:frontend:
+  stage: docker
+  image:
+    name: gcr.io/kaniko-project/executor:v1.23.2-debug
+    entrypoint: [""]
+  needs:
+    - security:backend
+    - security:frontend
+  script:
+    - /kaniko/executor
+      --context=$CI_PROJECT_DIR/frontend
+      --dockerfile=$CI_PROJECT_DIR/frontend/Dockerfile
+      --no-push
